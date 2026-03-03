@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freeddy — The Minimalist CRM for Solo Freelancers</title>
+    <meta name="description"
+        content="Freeddy is the minimalist CRM for solo freelancers who are tired of setup trauma, scattered email threads, and chasing payments. No client logins. No AI bloat. Just one Magic Link." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400;1,9..144,600&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="icon" type="image/png" href="symbol logo.png" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ─────────────────────── NAV ─────────────────────── -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <img src="Backgroundless logo.png" alt="Freeddy" class="nav-logo" />
+            <a href="#waitlist" class="nav-cta">Join the Waitlist</a>
+        </div>
+    </nav>
+
+    <!-- ─────────────────────── HERO ─────────────────────── -->
+    <section class="hero">
+        <div class="hero-inner">
+            <p class="hero-eyebrow parallax" data-speed="-0.15">For the solo professional who does it all</p>
+            <h1 class="hero-headline parallax" data-speed="-0.3">
+                Your clients hate your<br />
+                <span class="italic">"Client Portal."</span><br />
+                And frankly, so do you.
+            </h1>
+            <p class="hero-sub">
+                Freeddy is the minimalist CRM for solo freelancers who are tired of setup trauma, scattered email
+                threads, and chasing payments. No client logins. No AI bloat. Just one Magic Link to rule them all.
+                <br /><br />
+                <strong>Normal pricing: $19/mo. Waitlist price: $9/mo (Lifetime).</strong>
+            </p>
+
+            <form class="hero-form" id="waitlist" onsubmit="handleSubmit(event)">
+                <div class="form-row">
+                    <input type="email" id="email-input" placeholder="Enter your email..." class="email-input"
+                        required />
+                    <button type="submit" class="cta-btn">
+                        Join the Waitlist — 50% Off for Life
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="hero-scroll-hint">
+            <span>scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ─────────────────────── PROBLEM ─────────────────────── -->
+    <section class="problem">
+        <div class="container">
+            <div class="section-label">The honest problem</div>
+            <h2 class="section-headline">
+                Why is "getting organized"<br />such a full-time job?
+            </h2>
+            <p class="section-intro">
+                You're a solo professional, not a project manager for a 50-person agency. But right now, your business
+                looks like this:
+            </p>
+
+            <div class="problem-list">
+
+                <div class="problem-item">
+                    <div class="problem-number parallax" data-speed="0.1">01</div>
+                    <div class="problem-body">
+                        <h3 class="problem-title">The "Portal" Problem</h3>
+                        <p class="problem-copy">You send a link, and your client forgets the password. You're back to
+                            WhatsApp.</p>
+                    </div>
+                </div>
+
+                <div class="problem-item">
+                    <div class="problem-number parallax" data-speed="0.15">02</div>
+                    <div class="problem-body">
+                        <h3 class="problem-title">The "Scattered" Mess</h3>
+                        <p class="problem-copy">Feedback is in Slack, contracts are in DocuSign, and invoices are in a
+                            PDF somewhere in your Downloads folder.</p>
+                    </div>
+                </div>
+
+                <div class="problem-item">
+                    <div class="problem-number parallax" data-speed="0.2">03</div>
+                    <div class="problem-body">
+                        <h3 class="problem-title">The "Setup" Trauma</h3>
+                        <p class="problem-copy">You spent 3 days setting up a "simple" CRM just to realize you only use
+                            10% of the features.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ─────────────────────── SOLUTION ─────────────────────── -->
+    <section class="solution">
+        <div class="container">
+            <div class="section-label">How Freeddy works</div>
+            <h2 class="section-headline">
+                Everything for the project.<br />
+                In one single <span class="italic">Room.</span>
+            </h2>
+
+            <div class="features">
+
+                <div class="feature">
+                    <div class="feature-index">──</div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">The WhatsApp-Style Project Room</h3>
+                        <p class="feature-copy">Clients don't want another dashboard. Freeddy gives them a familiar,
+                            chat-first interface. One link, everything they need to see.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-index">──</div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">Magic Links — Zero Friction</h3>
+                        <p class="feature-copy">Stop asking clients to "Create an Account." They click your link and
+                            they are in. They can sign, pay, and chat instantly from their phone.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-index">──</div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">One-Click Advance</h3>
+                        <p class="feature-copy">Project moving to the next phase? One click sends the update and the
+                            invoice. No more manual chasing. No more "Did you get my email?"</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ─────────────────────── PROMISE ─────────────────────── -->
+    <section class="promise">
+        <div class="container promise-inner">
+            <div class="promise-left">
+                <div class="section-label parallax" data-speed="-0.1">From the founder</div>
+                <blockquote class="promise-quote parallax" data-speed="-0.05">
+                    "I built this because I was tired of being a 'Tool Admin' instead of a Designer/Dev."
+                </blockquote>
+            </div>
+            <div class="promise-right">
+                <p class="promise-lead">Freeddy isn't trying to be "All-in-one." <br />We're trying to be
+                    <em>"Only-the-essentials."</em>
+                </p>
+                <ul class="promise-list">
+                    <li>No agency team features</li>
+                    <li>No AI-powered nonsense</li>
+                    <li>10-minute setup — maximum</li>
+                    <li>Mobile-first, because you work from everywhere</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─────────────────────── FINAL CTA ─────────────────────── -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="section-label">Limited spots</div>
+            <h2 class="section-headline final-headline">
+                The "Founding 100" Deal.
+            </h2>
+            <p class="final-copy">
+                We are opening the Beta to exactly 100 freelancers this month. Those on this waitlist get:
+            </p>
+
+            <div class="perks">
+                <div class="perk">
+                    <div class="perk-dash">—</div>
+                    <p>Standard price is $19/mo. <strong>Get it for $9/mo (Lifetime)</strong> if you join the Founding
+                        100.</p>
+                </div>
+                <div class="perk">
+                    <div class="perk-dash">—</div>
+                    <p>Direct line to the founders to request the features <em>you</em> need.</p>
+                </div>
+                <div class="perk">
+                    <div class="perk-dash">—</div>
+                    <p>The "Zero Setup" Guarantee. If it takes you more than 10 minutes to get your first project live,
+                        we'll set it up for you.</p>
+                </div>
+            </div>
+
+            <form class="final-form" onsubmit="handleSubmit(event)">
+                <div class="form-row">
+                    <input type="email" id="email-input-2" placeholder="Enter your email..." class="email-input"
+                        required />
+                    <button type="submit" class="cta-btn cta-btn--large">
+                        Claim My 50% Discount &amp; Join Waitlist
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- ─────────────────────── FOOTER ─────────────────────── -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <img src="Backgroundless logo.png" alt="Freeddy" class="footer-logo" />
+            <p class="footer-tagline">Built for Solos. By Solos.</p>
+            <p class="footer-copy">© 2026 Freeddy — No Portals. Just Progress.</p>
+        </div>
+    </footer>
+
+    <script>
+        async function handleSubmit(e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('.cta-btn');
+            const input = e.target.querySelector('input[type="email"]');
+            const email = input.value;
+
+            btn.textContent = "Wait...";
+            btn.disabled = true;
+
+            try {
+                const response = await fetch('https://hook.eu1.make.com/hgtsn7kxba1m8aaoy61xtd7qv1vhk9r3', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email })
+                });
+
+                if (response.ok) {
+                    btn.textContent = "You're on the list.";
+                    btn.classList.add('cta-btn--success');
+                    input.disabled = true;
+                    input.value = '';
+                    input.placeholder = 'See you inside.';
+                } else {
+                    btn.textContent = "Try again?";
+                    btn.disabled = false;
+                }
+            } catch (err) {
+                console.error("Signup failed:", err);
+                btn.textContent = "Try again?";
+                btn.disabled = false;
+            }
+        }
+
+        // Subtle scroll-driven reveals
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(el => {
+                if (el.isIntersecting) {
+                    el.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.12 });
+
+        document.querySelectorAll('.problem-item, .feature, .perk, .promise-left, .promise-right')
+            .forEach(el => observer.observe(el));
+
+        // Cheesy Parallax Effect
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            document.querySelectorAll('.parallax').forEach(el => {
+                const speed = parseFloat(el.getAttribute('data-speed')) || 0;
+                // Only apply parallax if screen is wide enough to avoid jank on mobile
+                if (window.innerWidth > 768) {
+                    el.style.transform = `translateY(${scrolled * speed}px)`;
+                } else {
+                    el.style.transform = 'none';
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
