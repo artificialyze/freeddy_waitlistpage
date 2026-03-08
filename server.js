@@ -12,6 +12,12 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
+// Serve static files (index.html, style.css, images)
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+const __dirname = dirname(fileURLToPath(import.meta.url));
+app.use(express.static(__dirname));
+
 // Initialize Postgres/CockroachDB connection pool
 const { Pool } = pg;
 const pool = new Pool({
