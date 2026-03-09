@@ -13,7 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400;1,9..144,600&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet" />
     <link rel="icon" type="image/png" href="symbol logo.png" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_v2.css" />
 </head>
 
 <body>
@@ -61,6 +61,7 @@
             </p>
 
             <form class="form" id="hero-form" onsubmit="handleSubmit(event)">
+                <input type="text" name="b_name" class="h-pot" tabindex="-1" autocomplete="off" />
                 <input type="email" placeholder="Your email..." class="form__input" required />
                 <button type="submit" class="btn btn--primary">Claim My Founding 100 Spot — Free</button>
             </form>
@@ -310,6 +311,7 @@
             <p class="founding__urgency">47 of 100 spots remaining. This section disappears when they're gone.</p>
 
             <form class="form form--center" onsubmit="handleSubmit(event)">
+                <input type="text" name="b_name" class="h-pot" tabindex="-1" autocomplete="off" />
                 <input type="email" placeholder="Your email..." class="form__input" required />
                 <button type="submit" class="btn btn--primary">Claim My Spot — It's Free to Join</button>
             </form>
@@ -360,28 +362,7 @@
         </div>
     </section>
 
-    <!-- ═══════════════════ § 9 — SOCIAL PROOF ═══════════════════ -->
-    <section class="proof">
-        <div class="wrap">
-            <span class="label">Early reactions.</span>
-            <h2 class="heading">What freelancers said when we showed them the Magic Link.</h2>
 
-            <div class="proof__grid">
-                <blockquote class="proof__card reveal">
-                    <p>"[Quote from beta user or waitlist member]"</p>
-                    <cite>— Name, Type of Freelancer</cite>
-                </blockquote>
-                <blockquote class="proof__card reveal">
-                    <p>"[Quote from beta user or waitlist member]"</p>
-                    <cite>— Name, Type of Freelancer</cite>
-                </blockquote>
-                <blockquote class="proof__card reveal">
-                    <p>"[Quote from beta user or waitlist member]"</p>
-                    <cite>— Name, Type of Freelancer</cite>
-                </blockquote>
-            </div>
-        </div>
-    </section>
 
     <!-- ═══════════════════ § 10 — FINAL CTA ═══════════════════ -->
     <section class="closing">
@@ -392,6 +373,7 @@
                 lifetime access at $9/month when we launch.</p>
 
             <form class="form form--center" onsubmit="handleSubmit(event)">
+                <input type="text" name="b_name" class="h-pot" tabindex="-1" autocomplete="off" />
                 <input type="email" placeholder="Your email..." class="form__input form__input--dark" required />
                 <button type="submit" class="btn btn--primary">Join the Waitlist — Claim My Spot</button>
             </form>
@@ -426,8 +408,14 @@
         /* ── Waitlist form submit ── */
         async function handleSubmit(e) {
             e.preventDefault();
-            const btn = e.target.querySelector('.btn');
-            const input = e.target.querySelector('input[type="email"]');
+            const form = e.target;
+            const hPot = form.querySelector('.h-pot');
+
+            // Bot protection: If honeypot is filled, silent exit
+            if (hPot && hPot.value) return;
+
+            const btn = form.querySelector('.btn');
+            const input = form.querySelector('input[type="email"]');
             const email = input.value;
 
             btn.textContent = 'Sending…';
@@ -474,22 +462,7 @@
         }));
     </script>
 
-    <!-- ── Voiceglow chatbot ── -->
-    <div style="width:0;height:0" id="VG_OVERLAY_CONTAINER"></div>
-    <script defer>
-        (function () {
-            window.VG_CONFIG = {
-                ID: "JOJ8EIoQPsuKKlo3",
-                region: 'na',
-                render: 'bottom-right',
-                stylesheets: ["https://cdn.convocore.ai/vg_live_build/styles.css"]
-            };
-            var s = document.createElement("script");
-            s.src = "https://cdn.convocore.ai/vg_live_build/vg_bundle.js";
-            s.defer = true;
-            document.body.appendChild(s);
-        })();
-    </script>
+
 
 </body>
 
