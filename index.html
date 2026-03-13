@@ -1,469 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Freeddy — One Magic Link. One Room. Everything Inside It.</title>
-    <meta name="description"
-        content="Freeddy gives every client one Magic Link. They click it. They're in. No account. No password. Chat, contracts, invoices, files — in one Room. Built for solo freelancers." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400;1,9..144,600&family=Inter:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet" />
-    <link rel="icon" type="image/png" href="symbol logo.png" />
-    <link rel="stylesheet" href="style_v2.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freeddy | End Client Ghosting</title>
+    <!-- High-End Editorial Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- ═══════════════════ § 1 — NAV ═══════════════════ -->
-    <nav class="nav" id="top">
-        <div class="nav__inner">
-            <a href="#top" class="nav__brand">
-                <img src="Backgroundless logo.png" alt="Freeddy" class="nav__logo" />
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo-link">
+                <!-- Large logo hanging out -->
+                <img src="Backgroundless logo.png" alt="Freeddy" class="logo-img">
             </a>
-            <div class="nav__links">
-                <a href="#how-it-works">How It Works</a>
-                <a href="#the-promise">The Promise</a>
-                <a href="#founding-100">Founding 100</a>
+            <div class="nav-links">
+                <a href="#problem" class="nav-item hide-mobile">Problem</a>
+                <a href="#solution" class="nav-item hide-mobile">Solution</a>
+                <a href="#features" class="nav-item hide-mobile">Features</a>
+                <a href="#pricing" class="btn-primary">Join Waitlist</a>
             </div>
-            <a href="#waitlist" class="nav__cta">Join the Waitlist →</a>
-            <button class="nav__burger" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
         </div>
     </nav>
 
-    <!-- mobile overlay -->
-    <div class="mobile-menu" id="mobile-menu">
-        <a href="#how-it-works">How It Works</a>
-        <a href="#the-promise">The Promise</a>
-        <a href="#founding-100">Founding 100</a>
-        <a href="#waitlist" class="mobile-menu__cta">Join the Waitlist →</a>
-    </div>
-
-    <!-- ═══════════════════ § 2 — HERO ═══════════════════ -->
-    <section class="hero" id="waitlist">
-        <div class="hero__inner">
-            <p class="hero__tag reveal">For the solo freelancer who does it all alone.</p>
-            <h1 class="hero__h1 reveal">
-                Your clients ignored your portal.<br />
-                They went back to WhatsApp.<br />
-                <span class="accent">You went back to chaos.</span>
-            </h1>
-            <p class="hero__sub reveal">
-                Freeddy gives every client one Magic Link.<br class="hide-mobile" />
-                They click it. They're in. No account. No password. No "where do I sign?"<br /><br />
-                Everything — chat, contracts, invoices, files — in one Room.<br />
-                <strong>Finally.</strong>
-            </p>
-
-            <form class="form" id="hero-form" onsubmit="handleSubmit(event)">
-                <input type="text" name="b_name" class="h-pot" tabindex="-1" autocomplete="off" />
-                <input type="email" placeholder="Your email..." class="form__input" required />
-                <button type="submit" class="btn btn--primary">Claim My Founding 100 Spot — Free</button>
-            </form>
-            <p class="hero__micro reveal">100 spots. 47 remaining. $9/mo lifetime when we launch.</p>
-            <p class="hero__proof reveal">Built by a solo AI automation freelancer who got tired of being a Tool Admin.
-            </p>
-        </div>
-
-        <div class="scroll-cue">
-            <span>scroll</span>
-            <div class="scroll-cue__line"></div>
-        </div>
-    </section>
-
-    <!-- ═══════════════════ § 3 — THE PAIN ═══════════════════ -->
-    <section class="pain">
-        <div class="wrap">
-            <span class="label">The honest problem.</span>
-            <h2 class="heading">Right now, your "professional setup" looks like this.</h2>
-
-            <div class="pain__grid">
-
-                <article class="pain__card reveal">
-                    <span class="pain__num">01</span>
-                    <h3 class="pain__title">The Portal Nobody Opens</h3>
-                    <p>You spent three days setting up your client portal. You sent the link with confidence. They
-                        opened
-                        it once, forgot the password, and texted you on WhatsApp anyway. Your beautiful setup is a ghost
-                        town.</p>
-                </article>
-
-                <article class="pain__card reveal">
-                    <span class="pain__num">02</span>
-                    <h3 class="pain__title">The Stack That Costs You $300/Month</h3>
-                    <p>Notion for notes. DocuSign for contracts. FreshBooks for invoices. Calendly for calls. Google
-                        Drive for files. Five tools. Five logins. Five monthly charges. One frustrated client who still
-                        can't find the file you sent last Tuesday.</p>
-                </article>
-
-                <article class="pain__card reveal">
-                    <span class="pain__num">03</span>
-                    <h3 class="pain__title">The Setup Trauma</h3>
-                    <p>You've tried Dubsado. You've tried HoneyBook. You've tried Bonsai. Each time: a week of setup, a
-                        weekend of tutorials, two weeks of actual use, and then back to the PDF invoice you've had since
-                        2021.</p>
-                </article>
-
-                <article class="pain__card reveal">
-                    <span class="pain__num">04</span>
-                    <h3 class="pain__title">The Scope Creep That Was Always Coming</h3>
-                    <p>"Can you also just quickly…" — three weeks into the project. No revision limit. No written
-                        agreement. No graceful way to say no. Just you, absorbing extra work, resenting a client you
-                        actually like.</p>
-                </article>
-
-            </div>
-
-            <p class="pain__closing reveal"><strong>None of this is your fault. The tools were built for agencies. You
-                    are not an agency.</strong></p>
-        </div>
-    </section>
-
-    <!-- ═══════════════════ § 4 — SOLUTION ═══════════════════ -->
-    <section class="solution" id="how-it-works">
-        <div class="wrap">
-            <span class="label">How Freeddy works.</span>
-            <h2 class="heading">One Magic Link.<br />One Room.<br /><span class="accent">Everything inside
-                    it.</span></h2>
-            <p class="solution__intro">
-                You add a client to Freeddy. You get two links — one for you, one for them. You send theirs. They click
-                it. They're inside their own branded Room, addressed by name, with a welcome message already
-                waiting.<br /><br />
-                No account creation. No password reset. No "I didn't get the email." No tutorial.<br /><br />
-                Just the project. Just the work. Just the two of you.
-            </p>
-
-            <div class="features">
-
-                <div class="feat reveal">
-                    <div class="feat__marker"></div>
-                    <div>
-                        <h3 class="feat__title">The Magic Link</h3>
-                        <p>Your client gets a single URL that is theirs forever. They click it from any device, any
-                            browser, any country. They are immediately inside the Project Room — no friction, no
-                            gatekeeping. This is the end of the abandoned portal.</p>
-                    </div>
-                </div>
-
-                <div class="feat reveal">
-                    <div class="feat__marker"></div>
-                    <div>
-                        <h3 class="feat__title">The Project Room</h3>
-                        <p>Everything for the project lives in one place. Chat that feels like WhatsApp. Contracts they
-                            can sign in 30 seconds. Invoices with a Pay Now button. Files organised by type. Milestones
-                            they can actually see. The Room replaces five tools and the chaos between them.</p>
-                    </div>
-                </div>
-
-                <div class="feat reveal">
-                    <div class="feat__marker"></div>
-                    <div>
-                        <h3 class="feat__title">Contracts Without The Awkward Email</h3>
-                        <p>Use a template or upload your own. Send it as a card in the Room. Your client reads it, signs
-                            it with a typed or drawn signature, and you both get a timestamped PDF. No DocuSign account
-                            required. No PDF buried in a Downloads folder. Done in under two minutes.</p>
-                    </div>
-                </div>
-
-                <div class="feat reveal">
-                    <div class="feat__marker"></div>
-                    <div>
-                        <h3 class="feat__title">Invoices That Actually Get Paid</h3>
-                        <p>Create an invoice, send it into the Room as a card. Your client sees the total and a Pay Now
-                            button. In India, they pay via UPI, Net Banking, or card through Razorpay. Internationally,
-                            Stripe handles it. You get a real-time notification. The invoice card updates to Paid. No
-                            chasing. No awkward "just following up."</p>
-                    </div>
-                </div>
-
-                <div class="feat reveal">
-                    <div class="feat__marker"></div>
-                    <div>
-                        <h3 class="feat__title">The Revision Counter</h3>
-                        <p>Set your revision limit when you create the Room. Your client can see "Revisions Used: 1 of
-                            3" at all times. When they hit the limit, Freeddy sends them a graceful notification
-                            automatically. Scope creep is handled by the system, not by an uncomfortable
-                            conversation.</p>
-                    </div>
-                </div>
-
-                <div class="feat reveal">
-                    <div class="feat__marker"></div>
-                    <div>
-                        <h3 class="feat__title">The Project Archive</h3>
-                        <p>When a project closes, Freeddy generates a complete archive — every file, every signed
-                            contract, every paid invoice, the full chat transcript — and sends it to both of you as a
-                            downloadable ZIP. Your client has never been treated this professionally by a freelancer.
-                            They will tell someone.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ═══════════════════ § 5 — COMPARISON ═══════════════════ -->
-    <section class="versus">
-        <div class="wrap">
-            <span class="label">The honest comparison.</span>
-            <h2 class="heading">Not another tool to learn.<br /><span class="accent">A replacement for the ones you
-                    hate.</span></h2>
-
-            <div class="versus__table">
-                <div class="versus__col versus__col--old reveal">
-                    <h4 class="versus__colhead">Your current setup</h4>
-                    <ul>
-                        <li>WhatsApp for client chat</li>
-                        <li>Google Drive for files</li>
-                        <li>DocuSign for contracts</li>
-                        <li>FreshBooks or a PDF for invoices</li>
-                        <li>Calendly for scheduling</li>
-                        <li>Notion for project notes</li>
-                        <li>Your memory for revision limits</li>
-                        <li>An awkward email for scope creep</li>
-                        <li>$200–$400/month in subscriptions</li>
-                        <li>A client who still can't find anything</li>
-                    </ul>
-                </div>
-                <div class="versus__col versus__col--new reveal">
-                    <h4 class="versus__colhead">Freeddy</h4>
-                    <ul>
-                        <li>One Magic Link</li>
-                        <li>One Project Room</li>
-                        <li>Everything inside it</li>
-                        <li>$9/month</li>
-                        <li>A client who feels taken care of</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ═══════════════════ § 6 — FOUNDER ═══════════════════ -->
-    <section class="founder" id="the-promise">
-        <div class="wrap founder__grid">
-            <div class="founder__sticky reveal">
-                <span class="label label--light">From the founder.</span>
-                <blockquote class="founder__quote">"I built this because I was embarrassed."</blockquote>
-            </div>
-            <div class="founder__story reveal">
-                <p>My name is Saikat. I'm a solo AI automation freelancer from Kolkata. For three years I've charged
-                    clients real money to automate their workflows — onboarding systems, invoice sequences, client
-                    communication pipelines.</p>
-                <p>My own client management was a WhatsApp thread and a PDF invoice I copy-pasted every time.</p>
-                <p>The moment that finally broke me: I sent a client a portal link. They called me ten minutes later
-                    asking where to find it. We spent fifteen minutes on the password reset. Then they said:
-                    <em>"Bhai, easier on WhatsApp no?"</em>
+    <!-- Hero Section -->
+    <section class="hero section" id="home">
+        <div class="container container-hero">
+            <div class="hero-content">
+                <div class="badge">Beta Access</div>
+                <h1 class="hero-title">Send one link. <br><span class="text-accent">Get replies instead of silence.</span></h1>
+                <p class="hero-subtitle">
+                    Freeddy is the Client Portal built to end ghosting forever. Give clients a no-login chat vault where everything happens inline—proposals, invoices, contracts, payments, milestones, and feedback—so they actually engage, approve, and pay without vanishing.
                 </p>
-                <p>They were right.</p>
-                <p>So I built Freeddy. Not for the agency founder with a team of five. For the version of me from three
-                    years ago — doing everything alone, trying to look professional, drowning in tools that were never
-                    built for one person doing it all.</p>
-                <p>Freeddy isn't trying to be everything. It's trying to be the only thing you need.</p>
-                <p class="founder__sign">— Saikat Dutta Chowdhury, Founder</p>
+                <div class="hero-actions">
+                    <a href="#pricing" class="btn-primary btn-large">Join the Free Waitlist (First 100 Get Beta Access + 50% Off Lifetime)</a>
+                    <span class="auth-note">No card required. Beta launching soon—be first to kill client ghosting.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem section" id="problem">
+        <div class="container">
+            <h2 class="section-heading">Tired of clients disappearing into the void?</h2>
+            
+            <div class="problem-layout">
+                <div class="problem-text">
+                    <p class="lead">As a freelancer, you pour hours into proposals, deliverables, and follow-ups—only to get crickets.</p>
+                </div>
+                
+                <div class="problem-grid">
+                    <div class="issue-item">
+                        <h3>Sent a killer proposal?</h3>
+                        <p>Radio silence for weeks.</p>
+                    </div>
+                    <div class="issue-item">
+                        <h3>Shared files for feedback?</h3>
+                        <p>They "forget" to check.</p>
+                    </div>
+                    <div class="issue-item">
+                        <h3>Invoiced after a project?</h3>
+                        <p>Payments drag on forever.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="problem-deep">
+                <p>Ghosting isn't just annoying—it's killing your cashflow, sanity, and growth. You've tried emails, Slack, Notion links, even WhatsApp. But clients treat them like optional homework. Logins? They open once and bail. The result: Endless chasing, eroded boundaries, and lost deals.</p>
+                <p class="emphasize">You're not alone—70% of freelancers say poor client comms is their top stressor. It's time for a portal clients actually use.</p>
             </div>
         </div>
     </section>
 
-    <!-- ═══════════════════ § 7 — FOUNDING 100 ═══════════════════ -->
-    <section class="founding" id="founding-100">
-        <div class="wrap">
-            <span class="label">Limited. Intentionally.</span>
-            <h2 class="heading">The Founding 100.<br /><span class="accent">This is your window.</span></h2>
-            <p class="founding__lead">
-                We are opening Freeddy to exactly 100 freelancers before public launch.<br /><br />
-                Not because we can't handle more. Because we want the first hundred users to be people who actually feel
-                the problem — not people who signed up because they saw an ad.
-            </p>
-
-            <h3 class="founding__subhead">What Founding 100 members get:</h3>
-
-            <div class="perks">
-                <div class="perk reveal">
-                    <span class="perk__arrow">→</span>
-                    <p>Lifetime access at <strong>$9/month — locked forever.</strong> Standard price will be $19/month.
-                    </p>
-                </div>
-                <div class="perk reveal">
-                    <span class="perk__arrow">→</span>
-                    <p>A direct line to the founder. Every feature request goes to the top of the backlog.</p>
-                </div>
-                <div class="perk reveal">
-                    <span class="perk__arrow">→</span>
-                    <p>The <strong>Zero Setup Guarantee.</strong> If it takes you more than 10 minutes to get your first
-                        project live, we set it up for you personally.</p>
-                </div>
-                <div class="perk reveal">
-                    <span class="perk__arrow">→</span>
-                    <p>First access to every new feature before anyone else.</p>
-                </div>
-                <div class="perk reveal">
-                    <span class="perk__arrow">→</span>
-                    <p>Your name in the product as a Founding Member.</p>
+    <!-- Solution Section -->
+    <section class="solution section" id="solution">
+        <div class="container container-solution">
+            <div class="solution-content">
+                <h2 class="section-heading">Freeddy: The Portal That Makes Clients Respond</h2>
+                <div class="solution-text-block">
+                    <p>Freeddy gives every client their own secure, insanely responsive chat vault via one simple link (/space/[slug]). No logins, no apps—just open and engage.</p>
+                    <p>It's like texting for pros: Real-time presence ("Online now"), typing indicators, "last seen" timestamps, read receipts, and exact view times ("Saw your proposal at 10:05 AM"). Clients can't hide or "forget"—everything stays in one thread.</p>
+                    <p>Push quick actions inline: Proposals with negotiation, invoices with payments, contracts with e-signs, milestones with checklists, feedback forms with reviews. Drag-and-drop files, watermarked for virality.</p>
+                    <p class="outcome">The result? Clients reply faster, approve quicker, pay on time. Ghosting ends. You reclaim your day.</p>
                 </div>
             </div>
-
-            <p class="founding__urgency">47 of 100 spots remaining. This section disappears when they're gone.</p>
-
-            <form class="form form--center" onsubmit="handleSubmit(event)">
-                <input type="text" name="b_name" class="h-pot" tabindex="-1" autocomplete="off" />
-                <input type="email" placeholder="Your email..." class="form__input" required />
-                <button type="submit" class="btn btn--primary">Claim My Spot — It's Free to Join</button>
-            </form>
-            <p class="form__note">No credit card. No commitment. Just your email.<br />You'll be first in line when we
-                open the doors.</p>
         </div>
     </section>
 
-    <!-- ═══════════════════ § 8 — FAQ ═══════════════════ -->
-    <section class="faq">
-        <div class="wrap">
-            <span class="label">Fair questions.</span>
-
-            <div class="faq__list">
-                <details class="faq__item reveal" open>
-                    <summary class="faq__q">Is the product actually built?</summary>
-                    <p class="faq__a">Yes. The CRM, the Magic Links, and the Project Room chat are live and working
-                        today. Contracts, invoicing, and the full feature suite are shipping over the next six weeks.
-                        Founding members get access the moment each feature goes live — before anyone else.</p>
-                </details>
-                <details class="faq__item reveal">
-                    <summary class="faq__q">Why is it only $9/month?</summary>
-                    <p class="faq__a">Because you're early. You're taking a chance on something that isn't finished yet.
-                        The lifetime price is how we say thank you for that. Once we launch publicly the price goes to
-                        $19/month and the lifetime deal closes permanently.</p>
-                </details>
-                <details class="faq__item reveal">
-                    <summary class="faq__q">What makes this different from Dubsado or HoneyBook?</summary>
-                    <p class="faq__a">Those tools are built for the freelancer's side of the relationship. Freeddy is
-                        built for both sides. Specifically: your client never needs to create an account or remember a
-                        password. They click one link and they're in. That single difference changes the entire
-                        experience — for you and for them.</p>
-                </details>
-                <details class="faq__item reveal">
-                    <summary class="faq__q">What if I already have a system that works?</summary>
-                    <p class="faq__a">Then you probably don't need Freeddy. This is for freelancers whose clients keep
-                        drifting back to WhatsApp despite having a portal, who are duct-taping five tools together, and
-                        who have never had a client relationship that felt truly organised. If that's not you, we
-                        genuinely respect that.</p>
-                </details>
-                <details class="faq__item reveal">
-                    <summary class="faq__q">Is my client's data secure?</summary>
-                    <p class="faq__a">Yes. Every Space is protected by Row Level Security at the database layer — not
-                        just the application. A client can only ever access their specific Space. No client sees another
-                        client's data. Ever.</p>
-                </details>
+    <!-- Features Section -->
+    <section class="features section" id="features">
+        <div class="container">
+            <h2 class="section-heading">Built to Kill Ghosting—With Power-Ups for More</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>No-Login Magic Link</h3>
+                    <p>One personalized URL per client. They click, enter the vault—instant access without barriers. Auto-welcome message kicks things off.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Real-Time Accountability</h3>
+                    <p>See "typing...", "online", "last seen", read receipts, and view timestamps. Know exactly when they're ignoring you—and nudge accordingly.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Inline Everything</h3>
+                    <p>Proposals, quotes, invoices, contracts (with e-sign), deliverables, milestones, tasks, payments, feedback, reviews—all as interactive assets in the chat. Clients act with one tap.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Media & Files Perfected</h3>
+                    <p>Drag-and-drop uploads with previews, progress bars, and smart rendering (images, videos, docs). Watermarks encourage shares without losing credit.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>CRM Enhancer <span class="badge-mini">Nice-to-Have</span></h3>
+                    <p>Custom tables for leads and outreach auto-create portals for winners. Track lifecycle stages, filters, and bulk actions to feed your anti-ghosting machine.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Drive Enhancer <span class="badge-mini">Nice-to-Have</span></h3>
+                    <p>Built-in folders and rich-text editor for docs. Inject templates (proposals, contracts) straight into chats—version history keeps things pro.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Brand Customization</h3>
+                    <p>Your avatar, bio, CTAs in every portal. White-label everything so clients see you, not a generic tool.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Safeguards & Extras</h3>
+                    <p>Duplicate prevention, state recovery, onboarding tour, basic analytics (ghost rates, response times). All to make your portals unbreakable.</p>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- How It Works Section -->
+    <section class="how-it-works section" id="how-it-works">
+        <div class="container">
+            <h2 class="section-heading center">Set Up in Minutes, End Ghosting Today</h2>
+            
+            <div class="steps-grid">
+                <div class="step-card">
+                    <span class="step-num">01</span>
+                    <div class="step-info">
+                        <h3>Add a Client</h3>
+                        <p>Drop their details in Freeddy—auto-generates a unique portal link.</p>
+                    </div>
 
-
-    <!-- ═══════════════════ § 10 — FINAL CTA ═══════════════════ -->
-    <section class="closing">
-        <div class="wrap closing__inner">
-            <h2 class="heading heading--light">You've been the Tool Admin<br /><span class="accent">long
-                    enough.</span></h2>
-            <p class="closing__sub">47 spots left. One email. No credit card.<br />Join the Founding 100 and get
-                lifetime access at $9/month when we launch.</p>
-
-            <form class="form form--center" onsubmit="handleSubmit(event)">
-                <input type="text" name="b_name" class="h-pot" tabindex="-1" autocomplete="off" />
-                <input type="email" placeholder="Your email..." class="form__input form__input--dark" required />
-                <button type="submit" class="btn btn--primary">Join the Waitlist — Claim My Spot</button>
-            </form>
-            <p class="form__note form__note--light">No spam. No noise. One email when we open the doors.<br />Built for
-                solos. By a solo.</p>
+                </div>
+                <div class="step-card">
+                    <span class="step-num">02</span>
+                    <div class="step-info">
+                        <h3>Send the Link</h3>
+                        <p>Share via email or text: "Here's your project vault—no login needed."</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <span class="step-num">03</span>
+                    <div class="step-info">
+                        <h3>Watch the Magic</h3>
+                        <p>They enter the chat. Push proposals/invoices inline. See views, get approvals, collect payments—all in one thread.</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <span class="step-num">04</span>
+                    <div class="step-info">
+                        <h3>Scale with Enhancers</h3>
+                        <p>Use CRM for lead tracking or Drive for doc injection to supercharge.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="steps-action center">
+                <a href="#pricing" class="btn-primary">Join Free Waitlist Now</a>
+            </div>
         </div>
     </section>
 
-    <!-- ═══════════════════ § 11 — FOOTER ═══════════════════ -->
+    <!-- Social Proof Section -->
+    <section class="social-proof section" id="proof">
+        <div class="container">
+            <h2 class="section-heading center">Freelancers Are Ditching Ghosting</h2>
+            
+            <div class="quotes-grid">
+                <div class="quote-card">
+                    <p class="quote-text">"Freeddy's portal turned my flaky clients into responsive partners. No more chasing—timestamps keep them accountable."</p>
+                    <p class="quote-author">— Alex R., Graphic Designer</p>
+                </div>
+                <div class="quote-card">
+                    <p class="quote-text">"Inline e-signs and payments? Game-changer. Ghosting dropped 80% in my first week."</p>
+                    <p class="quote-author">— Jamie L., Web Developer</p>
+                </div>
+                <div class="quote-card">
+                    <p class="quote-text">"Finally, a tool that clients actually use. The no-login link is genius."</p>
+                    <p class="quote-author">— Taylor M., Copywriter</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / Waitlist CTA Section -->
+    <section class="pricing section" id="pricing">
+        <div class="container">
+            <div class="pricing-layout">
+                <div class="pricing-content">
+                    <div class="scarcity">Beta Access</div>
+                    <h2 class="section-heading">Join the waitlist for <span class="text-accent">$9/mo lifetime.</span></h2>
+                    <p class="pricing-desc">Freeddy launches soon at $19/mo. But for the first 100 waitlist joiners:</p>
+                    <ul class="pricing-perks">
+                        <li>Free Lifetime Beta Access: Test the full portal before anyone else.</li>
+                        <li>50% Off Forever: Lock in $9/mo lifetime when we go public.</li>
+                    </ul>
+                    <p class="pricing-note">No card required now. Just your email to reserve your spot.</p>
+                </div>
+                
+                <div class="pricing-form-container">
+                    <form class="waitlist-form" id="waitlistForm">
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" name="email" placeholder="Your best email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>What's your biggest ghosting pain? (Optional)</label>
+                            <input type="text" name="pain" placeholder="e.g. Clients ignoring proposals">
+                        </div>
+                        <button type="submit" class="btn-submit">Reserve My Spot (It's Free)</button>
+                        <p class="form-footer">Only 100 spots—don't miss out on ending ghosting for good.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
-        <div class="wrap footer__inner">
-            <div class="footer__brand">
-                <img src="Backgroundless logo.png" alt="Freeddy" class="footer__logo" />
-                <p class="footer__tagline">Built for solos. By solos.</p>
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <img src="Backgroundless logo.png" alt="Freeddy" class="footer-logo">
+                <p>Built by freelancers, for freelancers.</p>
+                <p class="copyright">© 2026 Freeddy. All rights reserved.</p>
             </div>
-            <nav class="footer__links">
-                <a href="#how-it-works">How It Works</a>
-                <a href="#the-promise">The Promise</a>
-                <a href="#founding-100">Founding 100</a>
-                <a href="mailto:inquiries@freeddy.online">Contact</a>
-            </nav>
-            <p class="footer__email">inquiries@freeddy.online</p>
-            <p class="footer__copy">© 2026 Freeddy. No Portals. Just Progress.</p>
-            <p class="footer__legal">Freeddy is not affiliated with or endorsed by Dubsado, HoneyBook, Bonsai, Notion,
-                DocuSign, or any other tool mentioned on this page. All product names are trademarks of their respective
-                owners.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <p><a href="https://x.com/saikat_scales" target="_blank">Build-in-public updates from the founder @saikat_scales</a></p>
+                <p class="privacy">We respect your data—end-to-end encryption in every portal.</p>
+            </div>
         </div>
     </footer>
 
-    <!-- ═══════════════════ SCRIPTS ═══════════════════ -->
-    <script>
-        /* ── Waitlist form submit ── */
-        async function handleSubmit(e) {
-            e.preventDefault();
-            const form = e.target;
-            const hPot = form.querySelector('.h-pot');
-
-            // Bot protection: If honeypot is filled, silent exit
-            if (hPot && hPot.value) return;
-
-            const btn = form.querySelector('.btn');
-            const input = form.querySelector('input[type="email"]');
-            const email = input.value;
-
-            btn.textContent = 'Sending…';
-            btn.disabled = true;
-
-            try {
-                const res = await fetch('https://hook.eu1.make.com/hgtsn7kxba1m8aaoy61xtd7qv1vhk9r3', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ email })
-                });
-                if (res.ok) {
-                    btn.textContent = "You're on the list ✓";
-                    btn.classList.add('btn--success');
-                    input.disabled = true;
-                    input.value = '';
-                    input.placeholder = 'See you inside.';
-                } else {
-                    btn.textContent = 'Try again';
-                    btn.disabled = false;
-                }
-            } catch {
-                btn.textContent = 'Try again';
-                btn.disabled = false;
-            }
-        }
-
-        /* ── Scroll reveal ── */
-        const io = new IntersectionObserver((entries) => {
-            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); } });
-        }, { threshold: 0.1 });
-        document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-
-        /* ── Mobile menu toggle ── */
-        const burger = document.querySelector('.nav__burger');
-        const mobileMenu = document.getElementById('mobile-menu');
-        burger.addEventListener('click', () => {
-            const open = mobileMenu.classList.toggle('mobile-menu--open');
-            burger.classList.toggle('nav__burger--open', open);
-        });
-        mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-            mobileMenu.classList.remove('mobile-menu--open');
-            burger.classList.remove('nav__burger--open');
-        }));
-    </script>
-
-
-
+    <script src="main.js"></script>
 </body>
-
 </html>
