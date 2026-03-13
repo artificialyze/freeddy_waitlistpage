@@ -47,9 +47,15 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-fg);
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 h1 {
   font-size: clamp(3.5rem, 7vw, 6rem);
-  line-height: 1.05;
+  line-height: 1.1;
   letter-spacing: -0.03em;
 }
 
@@ -626,9 +632,14 @@ input[type="text"]:focus {
 /* Base Mobile Enhancements */
 @media (max-width: 900px) {
     :root {
-        --spacing-xl: 5rem;
-        --spacing-lg: 3rem;
+        --spacing-xl: 4rem;
+        --spacing-lg: 2.5rem;
         --navbar-height: 70px;
+    }
+
+    body, html {
+        overflow-x: hidden;
+        width: 100%;
     }
 
     body {
@@ -636,11 +647,29 @@ input[type="text"]:focus {
     }
 
     .container {
-        padding: 0 24px;
+        padding: 0 20px;
+        width: 100%;
+        max-width: 100vw;
     }
 
     .hide-mobile {
         display: none;
+    }
+
+    /* Stack all grids */
+    .hero-content,
+    .problem-layout,
+    .container-solution,
+    .features-grid,
+    .steps-grid,
+    .quotes-grid,
+    .pricing-layout,
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
     }
 
     /* Logo handling for mobile */
@@ -651,27 +680,42 @@ input[type="text"]:focus {
     .logo-link {
         top: 50%;
         transform: translateY(-50%);
+        left: 0;
     }
 
     /* Hero adjustments */
     h1 {
-        font-size: 2.8rem;
+        font-size: 2.6rem;
     }
 
     .hero-subtitle {
         font-size: 1.1rem;
-        margin-bottom: 2.5rem;
+        margin-bottom: 2rem;
     }
 
-    /* Pricing Card */
+    /* Pricing Card fix */
     .pricing-layout {
-        padding: 32px 24px;
+        padding: 2rem 1.5rem;
+        display: flex;
+        flex-direction: column;
     }
 
-    .pricing-info {
-        padding: 0 0 40px 0;
-        border-right: none;
-        border-bottom: 1px solid var(--color-border);
+    .pricing-content {
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    .pricing-form-container {
+        width: 100%;
+    }
+
+    .pricing-perks li {
+        text-align: left;
+    }
+
+    /* Footer fix */
+    .footer-container {
+        text-align: left;
     }
 }
 
