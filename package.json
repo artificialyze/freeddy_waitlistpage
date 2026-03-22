@@ -1,14 +1,28 @@
 {
-  "name": "freeddy-landing-page",
+  "name": "f1",
+  "version": "0.1.0",
   "private": true,
-  "version": "1.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@ably/chat": "^1.3.0",
+    "@supabase/supabase-js": "^2.99.3",
+    "ably": "^2.21.0",
+    "emoji-picker-react": "^4.18.0",
+    "next": "16.2.1",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
   },
   "devDependencies": {
-    "vite": "^6.0.0"
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.1",
+    "typescript": "^5"
   }
 }
