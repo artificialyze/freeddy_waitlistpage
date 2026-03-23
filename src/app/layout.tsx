@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "./Header";
 
 export const metadata: Metadata = {
   title: "Freeddy — The OS for Freelancers",
@@ -14,16 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header>
-          <div className="container">
-            <nav>
-              <div className="logo-text">Freeddy</div>
-              <div className="auth-buttons">
-                <a href="#founding" className="btn-secondary" id="nav-waitlist">Join Waitlist</a>
-              </div>
-            </nav>
-          </div>
-        </header>
+        <Header />
         {children}
       </body>
     </html>

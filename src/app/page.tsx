@@ -526,7 +526,8 @@ export default function Home() {
               <span className={styles.kickerLight}>FOUNDING MEMBER ENROLLMENT</span>
               <h2 className={styles.foundingTitleLight}>Lock In Your Advantage.<br />Before the Market Does.</h2>
               <p className={styles.foundingLead}>
-                The first 100 members secure a lifetime price lock at $9/month — every advanced feature, every future update, forever. 
+                Lock in our unique Founding Member rate of **$9/month** before we transition to our standard **$19/month** pricing. 
+                The first 100 members secure this price for every feature and update — forever.
                 This offer disappears the moment the threshold is reached. No exceptions.
               </p>
               <div className={styles.perksGrid}>
@@ -563,8 +564,18 @@ export default function Home() {
               <div className={styles.footerNavCol}>
                 <span className={styles.footerNavTitle}>Product</span>
                 <a href="#">Features</a>
-                <a href="#">Pricing</a>
-                <a href="#founding">Founding Member</a>
+                <a href="#">Roadmap</a>
+                <a href="#founding">Pricing</a>
+              </div>
+              <div className={styles.footerNavCol}>
+                <span className={styles.footerNavTitle}>Solutions</span>
+                <a href="#">Designers</a>
+                <a href="#">Developers</a>
+                <a href="#">Agencies</a>
+                <a href="#">Copywriters</a>
+                <a href="#">Web Devs</a>
+                <a href="#">Social Media</a>
+                <a href="#">AI Automation</a>
               </div>
               <div className={styles.footerNavCol}>
                 <span className={styles.footerNavTitle}>Legal</span>
@@ -577,11 +588,6 @@ export default function Home() {
                 <a href="https://www.instagram.com/freeddy.crm/" target="_blank" rel="noopener noreferrer">Instagram</a>
                 <a href="https://www.facebook.com/profile.php?id=61584891273986" target="_blank" rel="noopener noreferrer">Facebook</a>
                 <a href="https://x.com/Saikat_slays" target="_blank" rel="noopener noreferrer">Twitter (CEO)</a>
-              </div>
-              <div className={styles.footerNavCol}>
-                <span className={styles.footerNavTitle}>Company</span>
-                <a href="mailto:inquiries@freeddy.online">Contact</a>
-                <a href="#">Manifesto</a>
               </div>
             </div>
           </div>
